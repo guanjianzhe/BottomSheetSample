@@ -63,7 +63,7 @@ public class BottomSheetActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //Let's peek it, programmatically
                 View peakView = findViewById(R.id.drag_me);
-                mBottomSheetBehavior.setPeekHeight(peakView.getHeight());
+                mBottomSheetBehavior.setPeekHeight(peakView.getHeight() * 4);
                 peakView.requestLayout();
             }
         });
